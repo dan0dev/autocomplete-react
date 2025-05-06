@@ -10,6 +10,7 @@ Optimalizált React autocomplete komponens felhasználónevek kereséséhez, deb
 
 ## 🔍 Működési elv
 
+(az ábra tartalmazhat kisebb hibákat, pontatlanságot)
 ![Autocomplete működési elv - részletes folyamatábra](https://i.imgur.com/n5ceT5z.png)
 
 A komponens két teljesítmény-optimalizálási technikát alkalmaz:
