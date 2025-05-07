@@ -87,6 +87,9 @@ const UsernameSearch = () => {
   // WIP - keresés folyamatban
   const [isSearching, setIsSearching] = useState(false);
 
+  // Összes felhasználónév
+  const [showAllUsernames, setShowAllUsernames] = useState(false);
+
   /**
    * Referencia az utolsó throttling végrehajtás időbélyegének tárolására.
    * A useRef segítségével ez az érték megmarad a renderelések között.
@@ -211,6 +214,19 @@ const UsernameSearch = () => {
           <div key={index}>{username}</div>
         ))}
       </div>
+      <hr />
+      <button onClick={() => setShowAllUsernames((prev) => !prev)}>
+        {showAllUsernames ? "Felhasználók elrejtése" : "Összes felhasználó megjelenítése"}
+      </button>
+      {showAllUsernames && (
+        <div>
+          <ul>
+            {usernames.map((username, index) => (
+              <li key={index}>{username}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
