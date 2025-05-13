@@ -1,6 +1,6 @@
 # UsernameSearch Komponens
 
-Optimalizált React autocomplete komponens felhasználónevek kereséséhez, debouncing és throttling alkalmazásával.
+Optimalizált React autocomplete komponens felhasználónevek kereséséhez, debouncing és throttling alkalmazásával (videó alapján készített).
 
 ## 📝 Jellemzők
 
