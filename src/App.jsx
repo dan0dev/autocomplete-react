@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
- * Felhasználónevek tömbje, amelyben keresést fogunk végrehajtani.
- * A komponensen kívül --> ne jöjjön létre újra minden rendereléskor.
+ * Felhasználónevek tömbje
+ * A komponensen kívül --> ne jöjjön létre újra minden rendereléskor
  */
 
 const usernames = [
@@ -31,9 +31,6 @@ const usernames = [
  * csak az utolsó hívás fog ténylegesen végrehajtódni, a korábbiak
  * törlődnek.
  *
- * @param {Function} func - A függvény, amelyet debounce-olni kell
- * @param {number} delay - A késleltetés milliszekundumban
- * @returns {Function} - A debounce-olt függvény
  */
 function debounce(func, delay) {
   let timeoutId;
